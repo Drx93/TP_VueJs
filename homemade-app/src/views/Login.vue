@@ -18,8 +18,8 @@
   </template>
   
   <script>
-  import { useUserStore } from '../stores/user'
   import { users } from '../data/users'
+  import { useUserStore } from '../stores/user'
   
   export default {
     data() {
@@ -29,14 +29,13 @@
         errorMessage: '',
       }
     },
-    setup() {
-      const userStore = useUserStore()
-  
-      const login = () => {
+    methods: {
+      login() {
         const user = users.find(
-          (u) => u.username === userStore.username && u.password === userStore.password
+          (u) => u.username === this.username && u.password === this.password
         )
         if (user) {
+          const userStore = useUserStore()
           userStore.login(user)
           userStore.saveUser()
           // Rediriger vers la page d'accueil après connexion
@@ -44,10 +43,6 @@
         } else {
           this.errorMessage = "Nom d'utilisateur ou mot de passe incorrect."
         }
-      }
-  
-      return {
-        login,
       }
     },
   }
