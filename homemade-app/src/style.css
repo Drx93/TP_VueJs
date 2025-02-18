@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  padding: 0 5%;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  width: 100%;
+  display: flex;
+}
+nav ul{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 5%;
+}
+nav ul li{
+  margin: 0 2%;
+  width: 20%;
+  list-style: none;
+}
+nav h1{
+  font-size: 3em;
+  margin: 1%;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(0, 43, 78);
+  cursor: pointer;
+  transition: .2s;
+}
+h1{
+  margin: 5% 0;
+}
+ul{
+  list-style: none;
+}
+#chef ul li{
+    margin: 2% 0;
+}
+
+#chefs h2{
+  margin-top: 5%;
+}
+
+#chefs ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+#chefs ul li{
+  width: 100%;
+  margin: 2% 0;
+}
+#chefs ul li button{
+  padding: 1%;
+  margin-left: 2%;
+  border-radius: 3em;
+  border: none;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+#chefs ul li button:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+  transition: .5s;
+}
+
+#panier ul li{
+    margin: 2% 0;
+}
+#panier ul li button{
+  padding: .8% 1.5%;
+  margin-left: 2%;
+  border-radius: 3em;
+  border: none;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+#panier ul li button:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+  transition: .5s;
+}
